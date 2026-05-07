@@ -1,0 +1,24 @@
+server_connect_timeout: 5000
+
+listeners:
+  - query_port: 25577
+    motd: "EaglercraftX Proxy"
+    priorities:
+      - lobby
+    bind_local_address: true
+    host: 0.0.0.0:8080
+    max_players: 60
+    tab_list: GLOBAL_PING
+    ping_passthrough: false
+    force_default_server: true
+
+timeout: 30000
+connection_throttle: 4000
+
+servers:
+  lobby:
+    address: 1234-n1Yj.aternos.me:63338
+    restricted: false
+
+ip_forward: true
+online_mode: false
